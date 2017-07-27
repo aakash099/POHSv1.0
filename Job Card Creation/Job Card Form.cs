@@ -4,10 +4,8 @@ using System.Windows.Forms;
 using System.Drawing.Imaging;
 using System.Drawing.Printing;
 using System.Drawing;
-
-using MySql.Data.MySqlClient;
-using System.Data;
 using System.Globalization;
+using MySql.Data.MySqlClient;
 
 namespace Job_Card_Creation
 {
@@ -23,7 +21,7 @@ namespace Job_Card_Creation
         }
 
         //for printing
-
+        //test
         private System.IO.Stream streamToPrint;
         string streamType;
         [System.Runtime.InteropServices.DllImport("gdi32.dll")]
@@ -382,6 +380,11 @@ namespace Job_Card_Creation
         }
 
         private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void JobSheetNo_Click(object sender, EventArgs e)
         {
 
         }

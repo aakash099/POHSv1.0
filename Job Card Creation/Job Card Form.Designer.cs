@@ -589,6 +589,7 @@
             this.JobSheetNo.TabIndex = 1;
             this.JobSheetNo.Text = "Job Sheet No.";
             this.JobSheetNo.Visible = false;
+            this.JobSheetNo.Click += new System.EventHandler(this.JobSheetNo_Click);
             // 
             // JobCard
             // 
