@@ -21,7 +21,7 @@ namespace Job_Card_Creation
         }
 
         //for printing
-        
+        //test
         private System.IO.Stream streamToPrint;
         string streamType;
         [System.Runtime.InteropServices.DllImport("gdi32.dll")]
