@@ -31,7 +31,7 @@
             this.title1 = new System.Windows.Forms.Label();
             this.toJobCardForm = new System.Windows.Forms.Button();
             this.toNewJobForm = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ToInventory = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // title1
@@ -67,23 +67,23 @@
             this.toNewJobForm.UseVisualStyleBackColor = true;
             this.toNewJobForm.Click += new System.EventHandler(this.toNewJobForm_Click);
             // 
-            // button1
+            // ToInventory
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(584, 258);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(392, 108);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Inventory";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.ToInventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ToInventory.Location = new System.Drawing.Point(584, 258);
+            this.ToInventory.Name = "ToInventory";
+            this.ToInventory.Size = new System.Drawing.Size(392, 108);
+            this.ToInventory.TabIndex = 5;
+            this.ToInventory.Text = "Inventory";
+            this.ToInventory.UseVisualStyleBackColor = true;
+            this.ToInventory.Click += new System.EventHandler(this.toInventory_Click);
             // 
             // Main_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(988, 1031);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ToInventory);
             this.Controls.Add(this.toNewJobForm);
             this.Controls.Add(this.toJobCardForm);
             this.Controls.Add(this.title1);
@@ -98,6 +98,6 @@
         private System.Windows.Forms.Label title1;
         private System.Windows.Forms.Button toJobCardForm;
         private System.Windows.Forms.Button toNewJobForm;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ToInventory;
     }
 }

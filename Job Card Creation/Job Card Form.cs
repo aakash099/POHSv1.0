@@ -222,7 +222,8 @@ namespace Job_Card_Creation
                     + paper_from.Text + "')";
                 cmd.Connection = con;
                 con.Open();
-                cmd.ExecuteNonQuery();
+                 cmd.ExecuteNonQuery();
+                
                 con.Close();
                 StatusLabel.Text = "STATUS(button1_Click):- Data Accepted";
             }

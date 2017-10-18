@@ -29,7 +29,7 @@ namespace Job_Card_Creation
             frm2.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void toInventory_Click(object sender, EventArgs e)
         {
             Inventory frm3 = new Inventory();
             frm3.Show();

@@ -576,7 +576,6 @@
             this.sr_no.Name = "sr_no";
             this.sr_no.Size = new System.Drawing.Size(173, 34);
             this.sr_no.TabIndex = 2;
-            this.sr_no.Visible = false;
             this.sr_no.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // JobSheetNo

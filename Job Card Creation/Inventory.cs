@@ -16,5 +16,10 @@ namespace Job_Card_Creation
         {
             InitializeComponent();
         }
+
+        private void Inventory_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
