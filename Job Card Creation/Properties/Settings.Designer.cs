@@ -26,33 +26,11 @@ namespace Job_Card_Creation.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;database=\"job card database\";allowuservariables=Tru" +
-            "e")]
-        public string job_card_databaseConnectionString {
-            get {
-                return ((string)(this["job_card_databaseConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;password=root;persistsecurityinfo=True;database=\"jo" +
-            "b card database\";allowuservariables=True")]
-        public string job_card_database_ConnectionString1 {
+            "b card database\"")]
+        public string job_card_databaseConnectionString2 {
             get {
-                return ((string)(this["job_card_database_ConnectionString1"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;persistsecurityinfo=True;database=\"job card databas" +
-            "e\";allowuservariables=True")]
-        public string job_card_databaseConnectionString1 {
-            get {
-                return ((string)(this["job_card_databaseConnectionString1"]));
+                return ((string)(this["job_card_databaseConnectionString2"]));
             }
         }
     }
