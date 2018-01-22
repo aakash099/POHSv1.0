@@ -34,5 +34,10 @@ namespace Job_Card_Creation
             Inventory frm3 = new Inventory();
             frm3.Show();
         }
+
+        private void title1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

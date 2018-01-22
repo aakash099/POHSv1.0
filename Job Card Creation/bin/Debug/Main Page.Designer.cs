@@ -44,6 +44,7 @@
             this.title1.TabIndex = 1;
             this.title1.Text = "PERFECT PACKAGING";
             this.title1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.title1.Click += new System.EventHandler(this.title1_Click);
             // 
             // toJobCardForm
             // 

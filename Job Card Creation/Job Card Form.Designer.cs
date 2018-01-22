@@ -73,7 +73,7 @@
             this.VarnishLabel = new System.Windows.Forms.Label();
             this.Shade_Nos_Label = new System.Windows.Forms.Label();
             this.HorizontalBar4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.SubmitButton = new System.Windows.Forms.Button();
             this.printButton = new System.Windows.Forms.Button();
             this.DateLabel = new System.Windows.Forms.Label();
             this.date = new System.Windows.Forms.TextBox();
@@ -485,15 +485,15 @@
             this.HorizontalBar4.TabIndex = 58;
             this.HorizontalBar4.Click += new System.EventHandler(this.label5_Click);
             // 
-            // button1
+            // SubmitButton
             // 
-            this.button1.Location = new System.Drawing.Point(609, 613);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(183, 31);
-            this.button1.TabIndex = 59;
-            this.button1.Text = "Submit Only";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.SubmitButton.Location = new System.Drawing.Point(609, 613);
+            this.SubmitButton.Name = "SubmitButton";
+            this.SubmitButton.Size = new System.Drawing.Size(183, 31);
+            this.SubmitButton.TabIndex = 59;
+            this.SubmitButton.Text = "Submit Only";
+            this.SubmitButton.UseVisualStyleBackColor = true;
+            this.SubmitButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // printButton
             // 
@@ -518,10 +518,10 @@
             // 
             // date
             // 
-            this.date.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date.Location = new System.Drawing.Point(532, 40);
             this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(230, 38);
+            this.date.Size = new System.Drawing.Size(230, 34);
             this.date.TabIndex = 63;
             this.date.TextChanged += new System.EventHandler(this.date_TextChanged);
             // 
@@ -576,6 +576,7 @@
             this.sr_no.Name = "sr_no";
             this.sr_no.Size = new System.Drawing.Size(173, 34);
             this.sr_no.TabIndex = 2;
+            this.sr_no.Visible = false;
             this.sr_no.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // JobSheetNo
@@ -604,7 +605,7 @@
             this.Controls.Add(this.StatusLabel);
             this.Controls.Add(this.date);
             this.Controls.Add(this.DateLabel);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.SubmitButton);
             this.Controls.Add(this.HorizontalBar4);
             this.Controls.Add(this.paper_from);
             this.Controls.Add(this.PaperFromLabel);
@@ -704,7 +705,7 @@
         private System.Windows.Forms.Label VarnishLabel;
         private System.Windows.Forms.Label Shade_Nos_Label;
         private System.Windows.Forms.Label HorizontalBar4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button SubmitButton;
         private System.Windows.Forms.Button printButton;
         private System.Windows.Forms.Label DateLabel;
         private System.Windows.Forms.TextBox date;

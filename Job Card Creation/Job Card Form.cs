@@ -20,8 +20,8 @@ namespace Job_Card_Creation
           
         }
 
-        //for printing
-        //test
+        //for converting to image
+        
         private System.IO.Stream streamToPrint;
         string streamType;
         [System.Runtime.InteropServices.DllImport("gdi32.dll")]
@@ -65,6 +65,7 @@ namespace Job_Card_Creation
         
         private void Form1_Load(object sender, EventArgs e)
         {
+            //Autofill with new Number
             try
             {
                 int sr = 0;
@@ -303,6 +304,9 @@ namespace Job_Card_Creation
         private void button2_Click(object sender, EventArgs e)
         {
             StatusLabel.Text = "";
+            dateTimePicker1.Visible = false;
+            SubmitButton.Visible = false;
+            printButton.Visible = false;
             try { 
                         Graphics g1 = this.CreateGraphics();
                         Image MyImage = new Bitmap(this.ClientRectangle.Width, this.ClientRectangle.Height, g1);
@@ -321,8 +325,9 @@ namespace Job_Card_Creation
 
                         MyImage.Save(saveFileDialog1.FileName, ImageFormat.Jpeg);
                 StatusLabel.Text = "File Stored at..."+ saveFileDialog1.FileName.ToString();
-                
-             
+
+                SubmitButton.Visible = true;
+                printButton.Visible = true;
 
             }
 
@@ -363,12 +368,14 @@ namespace Job_Card_Creation
 
         private void DateLabel_Click(object sender, EventArgs e)
         {
+            //Fills Current date automatically, and makes date picker visible
             dateTimePicker1.Visible = true;
             date.Text = dateTimePicker1.Text;
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
+            //Fills date time Manually
             DateTime dt = DateTime.ParseExact(date.ToString(), "MM/dd/yyyy hh:mm:ss tt", CultureInfo.InvariantCulture);
 
             string s = dt.ToString("dd/M/yyyy", CultureInfo.InvariantCulture);
